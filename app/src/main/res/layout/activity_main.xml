@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical"
+    tools:context=".MainActivity"><![CDATA[
+
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="match_parent"
+        android:weightSum="3"> ]]>
+
+    <ListView
+        android:id="@+id/msgview"
+        android:layout_width="fill_parent"
+        android:layout_height="438dp"
+        android:layout_x="3dp"
+        android:layout_y="17dp"
+        android:background="@color/colorPrimaryDark"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_alignTop="@+id/msg"
+            android:layout_gravity="right"
+            android:layout_toEndOf="@+id/msg"
+
+            android:layout_x="305dp"
+            android:layout_y="452dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/img"
+            android:cropToPadding="false" />
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="297dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="2"
+            android:layout_x="4dp"
+            android:layout_y="448dp"
+            android:hint="Type Text Here.."
+            android:inputType="textMultiLine" />
+    </RelativeLayout>
+</LinearLayout>
